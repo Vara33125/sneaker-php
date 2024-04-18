@@ -9,6 +9,7 @@ $articles = $pdoStatement->fetchAll();
 ?>
 
     <h1 class=" text-center mt-5 pt-5">  CATALOGUE</h1>
+   
     <div class="container-fluid row mb-5  ">
     <?php foreach ($articles as $sneaker) : ?>
               

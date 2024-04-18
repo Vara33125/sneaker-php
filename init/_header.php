@@ -80,7 +80,18 @@
         
       </ul>
       <div class="dropdown">
-        <a style="text-decoration: none" href="deconnection.php" class="btn ">Déconnection</a>
+      <button class="btn btn-secondary dropdown-toggle me-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa-solid fa-user"></i>
+      </button>
+      <ul class="dropdown-menu">
+      <p class="text-center fw-bold"> <?= $_SESSION['user']['pseudo'] ?> </p>
+      <li><a class="dropdown-item" href="panier.php?id=0">Voir mon panier</a></li>
+      <li><a class="dropdown-item" href="profile.php">Modifier mes informations</a></li>
+      <li><a class="dropdown-item" href="deconnection.php">Se déconnecter</a></li>
+      </ul>
+      </div>
+      <div class="dropdown">
+       
   <button type="button" class="btn btn-light dropdown-toggle me-5" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
     Ajout article
   </button>

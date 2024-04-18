@@ -79,7 +79,7 @@ if(empty($_SESSION['panier'])) {
             <td><?=$article['titre'] ?></td>
             <td><?= $article['prix'] ?>€</td>
             <td><?=$article['quantite'] ?></td>
-            <td><?=$article['prix'] ?></td>
+            <td><?=$article['prix'] * $article['quantite']  ?></td>
         </tr>
         
      <?php endforeach ; ?>

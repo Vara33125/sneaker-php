@@ -47,19 +47,20 @@ if($_POST) {
         <form class="row g-3 w-50 my-5 " method="post">
                 <div class="form-floating">
                     <input type="text" name="pseudo" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Pseudo</label>
+                    <label for="floatingPassword">Pseudo *</label>
                     <?= $pseudoMessage ; ?>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
+                    <label for="floatingInput">Email *</label>
                     <?= $emailMessage ;?>
                 </div>
                 <div class="form-floating">
                     <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
+                    <label for="floatingPassword">Mot de Passe *</label>
                     <?= $passwordMessage ;?>
                 </div>
+                <p class="fst-italic"> * : champ obligatoire</p>
              <div class="col-12">
                 <button type="submit" class="btn btn-secondary w-25 mx-auto d-flex justify-content-center">S'inscrire</button>
             </div>
